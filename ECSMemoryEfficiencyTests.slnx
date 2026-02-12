@@ -3,5 +3,5 @@
     <Platform Name="x64" />
     <Platform Name="x86" />
   </Configurations>
-  <Project Path="ECSMemoryEfficiencyTests/ECSMemoryEfficiencyTests.vcxproj" />
+  <Project Path="ECSMemoryEfficiencyTests/ECSMemoryEfficiencyTests.vcxproj" Id="207fdd9d-3707-4cbc-8feb-d37421786902" />
 </Solution>

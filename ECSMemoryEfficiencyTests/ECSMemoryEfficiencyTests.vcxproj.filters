@@ -18,10 +18,10 @@
     <ClCompile Include="ECSMemoryEfficiencyTests.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="MyVector.cpp">
+    <ClCompile Include="Archetype.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="ITypeProvider.cpp">
+    <ClCompile Include="ComponentMeta.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
@@ -30,6 +30,12 @@
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="ITypeProvider.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Archetype.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ComponentMeta.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>

@@ -127,11 +127,13 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="Archetype.cpp" />
+    <ClCompile Include="ComponentMeta.cpp" />
     <ClCompile Include="ECSMemoryEfficiencyTests.cpp" />
-    <ClCompile Include="ITypeProvider.cpp" />
-    <ClCompile Include="MyVector.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="Archetype.h" />
+    <ClInclude Include="ComponentMeta.h" />
     <ClInclude Include="ITypeProvider.h" />
     <ClInclude Include="MyVector.h" />
   </ItemGroup>
