@@ -129,13 +129,17 @@
   <ItemGroup>
     <ClCompile Include="Archetype.cpp" />
     <ClCompile Include="ComponentMeta.cpp" />
+    <ClCompile Include="DummyComponents.cpp" />
     <ClCompile Include="ECSMemoryEfficiencyTests.cpp" />
+    <ClCompile Include="World.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Archetype.h" />
     <ClInclude Include="ComponentMeta.h" />
+    <ClInclude Include="DummyComponents.h" />
     <ClInclude Include="ITypeProvider.h" />
     <ClInclude Include="MyVector.h" />
+    <ClInclude Include="World.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
