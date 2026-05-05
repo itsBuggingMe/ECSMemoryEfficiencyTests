@@ -5,12 +5,15 @@
 #include <string>
 #include "Archetype.h"
 
+class Query;
+
 #pragma once
 class World
 {
 	std::vector<Archetype> _archetypes;
 	std::vector<int32_t> _recycled;
 	std::unordered_map<size_t, Archetype> _archetypesByHash;
+	std::vector<Query> _queries;
 	int32_t _next;
 
 	struct EntityLocation
@@ -26,6 +29,19 @@ public:
 	World()
 	{
 
+	}
+
+	// TODO: creating archetypes
+
+    void OnArchetypeCreation(Archetype archetype)
+	{
+		for (Query& query : _queries)
+		{
+			if (archetype.MatchesComponents(query.matched_components))
+			{
+				query.matched_archetypes.push_back(archetype);
+			}
+		}
 	}
 
 	template<typename... Args>
@@ -55,6 +71,14 @@ public:
 			= std::forward<Args>(args)), ...);
 
 		return id;
+	}
+
+	template<typename... Args>
+	Query CreateQuery()
+	{
+		var q = Query({ ComponentRegistry.TypeId<Args>()... });
+		_queries.push_back(q);
+		return q;
 	}
 
 	template<typename TComponent>

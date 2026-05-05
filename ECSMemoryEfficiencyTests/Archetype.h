@@ -31,6 +31,18 @@ public:
 	std::unordered_map<uint16_t, Archetype> ArchetypeGraphEdgesAddComponent;
 	std::unordered_map<uint16_t, Archetype> ArchetypeGraphEdgesRemoveComponent;
 
+	bool MatchesComponents(const std::vector<uint16_t>& components)
+	{
+		for (uint16_t comp : components)
+		{
+			if (std::find(component_ids.begin(), component_ids.end(), comp) == component_ids.end())
+				return false;
+		}
+
+		return true;
+	}
+
+
 	Archetype(std::vector<uint16_t> components)
 	{
 		component_ids = components;

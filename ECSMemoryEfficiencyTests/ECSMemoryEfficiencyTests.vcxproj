@@ -132,6 +132,7 @@
     <ClCompile Include="ComponentMeta.cpp" />
     <ClCompile Include="DummyComponents.cpp" />
     <ClCompile Include="ECSMemoryEfficiencyTests.cpp" />
+    <ClCompile Include="Query.cpp" />
     <ClCompile Include="World.cpp" />
   </ItemGroup>
   <ItemGroup>
@@ -141,6 +142,7 @@
     <ClInclude Include="DummyComponents.h" />
     <ClInclude Include="ITypeProvider.h" />
     <ClInclude Include="MyVector.h" />
+    <ClInclude Include="Query.h" />
     <ClInclude Include="World.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
